@@ -1,7 +1,7 @@
 <template>
   <div id="todays-names">
     <todays-date :date="nameDayToday.dates"></todays-date>
-    <todays-names-table></todays-names-table>
+    <todays-names-table :nameDayToday="nameDayToday"></todays-names-table>
   </div>
 </template>
 

@@ -1,35 +1,26 @@
 <template>
-  <div>
+  <div id="todays-names">
     <todays-date :date="nameDayToday.dates"></todays-date>
-      <h3>and the names for today are</h3>
-      <table>
-        <tr>
-          <th>Country</th>
-          <th>Names</th>
-        </tr>
-        <tr>
-          <td>Germany</td>
-          <td>Dorothy</td>
-        </tr>
-      </table>
-      <!-- <h2 v-for="(name, country) in nameDayToday.namedays" :value="name" :key="country">{{ countryCodes[country.toString()] }}: {{ name }}</h2> -->
+    <todays-names-table></todays-names-table>
   </div>
 </template>
 
 <script>
 import TodaysDate from './TodaysDate.vue';
+import TodaysNamesTable from './TodaysNamesTable.vue'
 
 export default {
     name: 'names-for-today',
     props: ['nameDayToday', 'countryCodes'],
     components: {
-      "todays-date": TodaysDate
+      "todays-date": TodaysDate,
+      "todays-names-table": TodaysNamesTable
     }
 }
 </script>
 
 <style scoped>
-  table {
-    width: 100%;
+  #todays-names {
+    border: solid black 2px;
   }
 </style>

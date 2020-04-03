@@ -6,7 +6,7 @@
             <th>Country</th>
             <th>Names</th>
         </tr>
-        <tr v-for="(names, country) in nameDayToday.namedays" :key="country" :value="names">
+        <tr v-for="(names, country) in nameDayToday.namedays" :key="country" :value="names" v-if="names!=='n/a'">
             <td>{{ country }}</td>
             <td>{{ names }}</td>
         </tr>

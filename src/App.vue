@@ -46,7 +46,7 @@ export default {
   mounted() {
     fetch('https://api.abalin.net/today')
     .then( response => response.json() )
-    .then( nameDayToday => this.nameDayToday = nameDayToday );
+    .then( nameDayToday => this.nameDayToday = nameDayToday.data );
   },
 
   components: {

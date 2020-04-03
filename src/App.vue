@@ -16,6 +16,30 @@ export default {
   data() {
     return {
       nameDayToday: {},
+      countryCodes: {
+              at: "Austria",
+              bg: "Bulgaria",
+              hr: "Croatia",
+              cz: "Czechia",
+              dk: "Denmark",
+              ee: "Estonia",
+              fi: "Finland",
+              fr: "France",
+              de: "Germany",
+              gr: "Greece",
+              hu: "Hungary",
+              it: "Italy",
+              lv: "Latvia",
+              lt: "Lithuania",
+              pl: "Poland",
+              ru: "Russian Federation",
+              sk: "Slovakia",
+              es: "Spain",
+              se: "Sweden",
+              us: "United States of America"
+              }
+
+
     }
   },
 
@@ -29,6 +53,30 @@ export default {
     "names-for-today": NamesForToday
   }
 }
+
+  // countryCodes: {
+                // at: "Austria",
+                // bg: "Bulgaria",
+                // hr: "Croatia",
+                // cz: "Czechia",
+                // dk: "Denmark",
+                // ee: "Estonia",
+                // fi: "Finland",
+                // fr: "France",
+                // de: "Germany",
+                // gr: "Greece",
+                // hu: "Hungary",
+                // it: "Italy",
+                // lv: "Latvia",
+                // lt: "Lithuania",
+                // pl: "Poland",
+                // ru: "Russian Federation",
+                // sk: "Slovakia",
+                // es: "Spain",
+                // se: "Sweden",
+                // us: "United States of America"
+                // }
+
 </script>
 
 <style scoped>

@@ -6,9 +6,9 @@
             <th>Country</th>
             <th>Names</th>
         </tr>
-        <tr>
-            <td>Hello</td>
-            <td>Darkness</td>
+        <tr v-for="(names, country) in nameDayToday.namedays" :key="country" :value="names">
+            <td>{{ country }}</td>
+            <td>{{ names }}</td>
         </tr>
       </table>
 </div>
@@ -16,6 +16,7 @@
 
 <script>
 export default {
+    props: ['nameDayToday'],
     components: {
     }
 }

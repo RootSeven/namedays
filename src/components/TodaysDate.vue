@@ -1,6 +1,5 @@
 <template>
 <div id="todays-date">
-    <h3>Today's date is</h3>
     <h2>{{ date.day }} {{ numberToMonth[date.month - 1 ] }}</h2>
 </div>
 </template>

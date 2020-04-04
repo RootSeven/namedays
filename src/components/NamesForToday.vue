@@ -1,7 +1,9 @@
 <template>
   <div id="todays-names">
+    <h3>Today's date is</h3>
     <todays-date :date="nameDayToday.dates"></todays-date>
-    <todays-names-table :nameDayToday="nameDayToday"></todays-names-table>
+    <h3>and the names for today are</h3>
+    <todays-names-table :countryCodes="countryCodes" :nameDayToday="nameDayToday"></todays-names-table>
   </div>
 </template>
 

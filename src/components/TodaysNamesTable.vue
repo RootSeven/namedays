@@ -1,13 +1,12 @@
 <template>
 <div>
-    <h3>and the names for today are</h3>
     <table>
         <tr>
             <th>Country</th>
             <th>Names</th>
         </tr>
         <tr v-for="(names, country) in nameDayToday.namedays" :key="country" :value="names" v-if="names!=='n/a'">
-            <td>{{ country }}</td>
+            <td>{{ countryCodes[country] }}</td>
             <td>{{ names }}</td>
         </tr>
       </table>
@@ -16,7 +15,7 @@
 
 <script>
 export default {
-    props: ['nameDayToday'],
+    props: ['nameDayToday', 'countryCodes'],
     components: {
     }
 }
